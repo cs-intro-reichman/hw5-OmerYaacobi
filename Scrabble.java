@@ -113,7 +113,7 @@ public class Scrabble {
 				break;
 			}
 			if (!MyString.subsetOf(input, hand) || !Scrabble.isWordInDictionary(input)) {
-				System.out.println("Invalid word. Try again");;
+				System.out.println("Invalid word. Try again.");;
 			} 
 			if (MyString.subsetOf(input, hand) && Scrabble.isWordInDictionary(input)) {
 				score += Scrabble.wordScore(input);
@@ -149,14 +149,10 @@ public class Scrabble {
 				}
 				if (input.equals("n")) {
 					String hand = Scrabble.createHand();
-					
 					Scrabble.playHand(hand);
-					
 				}
-			
 			}
 			if (input.equals("e")) {
-				System.out.println("Game has ended!");
 				break;
 			}
 			
