@@ -73,14 +73,19 @@ public class MyString {
      */
     public static String spacedString(String str) {
         
+        
         String spaced = "";
+        if (str.equals("")) {
+            return spaced;
+        }
 
         // for each char (except the last one) I'll add a space after it
         for (int i = 0; i < (str.length() - 1); i++){
             String cSpace = str.charAt(i) + " ";
             spaced += cSpace;
         }
-        spaced += str.charAt(str.length() - 1);
+        char last = str.charAt(str.length() - 1);
+        spaced += last;
         return spaced;
     }
   
